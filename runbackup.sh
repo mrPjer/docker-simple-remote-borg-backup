@@ -1,5 +1,7 @@
 set -e;
 
+source env.sh;
+
 export BORG_PASSPHRASE="$PASSPHRASE"
 
 # Initialize the repository (or ignore if it's already initialized)

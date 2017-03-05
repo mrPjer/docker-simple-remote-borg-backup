@@ -13,4 +13,4 @@ COPY runbackup.sh .
 COPY crontab /etc/cron.d/run-backup
 RUN chmod 0644 /etc/cron.d/run-backup
 
-CMD cron && ./runbackup.sh && tail -f /var/log/cron.log
+CMD ./dumpvars.sh && cron && ./runbackup.sh && tail -f /var/log/cron.log
