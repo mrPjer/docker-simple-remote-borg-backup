@@ -9,6 +9,7 @@ RUN touch /var/log/cron.log && \
         openssh-client && \
     rm -rf /var/lib/apt/lists/*
 
+COPY dumpvars.sh .
 COPY runbackup.sh .
 COPY crontab /etc/cron.d/run-backup
 RUN chmod 0644 /etc/cron.d/run-backup
