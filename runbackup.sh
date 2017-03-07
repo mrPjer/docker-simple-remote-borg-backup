@@ -2,7 +2,7 @@
 
 set -e;
 
-source env.sh;
+source /env.sh;
 
 export BORG_PASSPHRASE="$PASSPHRASE"
 
