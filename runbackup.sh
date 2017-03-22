@@ -14,7 +14,7 @@ borg create -v \
 	--compression lz4 \
 	--stats \
 	$REPOSITORY::'{hostname}-{now:%Y-%m-%d-%H-%M-%S}' \
-	data;
+	/data;
 
 # Prune files
 borg prune -v \
